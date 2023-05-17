@@ -5,6 +5,7 @@ import Community from './screens/community';
 import Club from "./screens/club";
 import { createSharedElementStackNavigator } from "react-navigation-shared-element";
 import { NavigationContainer } from "@react-navigation/native";
+// asd
 
 const Stack = createSharedElementStackNavigator();
 
