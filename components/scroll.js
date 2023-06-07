@@ -39,7 +39,7 @@ export default function Scroll({ navigation }) {
                 <Image source={cover.main} style={styles.tabBackground} blurRadius={10} />
                 <View style={styles.tabUpperLayer}>
                     <View><Text style={[styles.tabTitle]}>{cover.title}</Text></View>
-                    <Pressable style={({ pressed }) => [pressed && { opacity: 0.5 }, styles.tabButton]}>
+                    <Pressable style={({ pressed }) => [pressed && { opacity: 0.5 }, styles.tabButton]} onPress={() => { navigation.navigate("contribution"); }}>
                         <Text style={styles.tabButtonText}>Join</Text>
                     </Pressable>
                 </View>
@@ -63,7 +63,9 @@ export default function Scroll({ navigation }) {
                             <MaterialIcons name="verified" size={20} color="#1ea1ed" />
                         </View>
                     </SharedElement>
-                    <Pressable style={({ pressed }) => [pressed && { opacity: 0.5 }, styles.joinButton]}><Text style={styles.buttonText}>Join</Text></Pressable>
+                    <Pressable style={({ pressed }) => [pressed && { opacity: 0.5 }, styles.joinButton]} onPress={() => { navigation.navigate("contribution"); }}>
+                        <Text style={styles.buttonText}>Join</Text>
+                    </Pressable>
                 </View>
                 <View style={styles.labelContainer}><Text style={styles.label}>{cover.label}</Text></View>
                 <View style={styles.subLabelContainer}>
@@ -79,7 +81,7 @@ export default function Scroll({ navigation }) {
                 <View>
                     {communityData.map((item, index) => {
                         return (
-                            <CommunityHomePin data={item} />
+                            <CommunityHomePin data={item} key={index} />
                         )
                     })}
                 </View>
@@ -209,7 +211,6 @@ const styles = StyleSheet.create({
     coverBox: {
         width: 100,
         height: 100,
-        // borderWidth: 0.5,
         borderRadius: 12,
         marginTop: height * 0.225,
         marginLeft: 6

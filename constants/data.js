@@ -97,35 +97,45 @@ export const suggestions = [
         name: "Space Porn",
         tag: "Space and Astronomy",
         time: "1w",
-        type: "Community"
+        type: "Community",
+        motto: "If you are the one who walks with his eyes looking upwards wondering what's up there then this is the right community for you.",
+        activeMembers: "143"
     },
     {
         url: "https://pbs.twimg.com/profile_images/1383179127868493824/ipj3IYea_400x400.jpg",
         name: "Starship",
         tag: "Space and Astronomy",
         time: "1w",
-        type: "Club"
+        type: "Club",
+        motto: "Here we keep track of all the recent developments in field of space. Right now we all are hooked on Starship.",
+        activeMembers: "165"
     },
     {
         url: "https://pbs.twimg.com/profile_images/1621216068361412612/XDsy0IeQ_400x400.jpg",
         name: "Ai",
         tag: "Artificial Intelligence and Machine Learning",
         time: "1w",
-        type: "Community"
+        type: "Community",
+        motto: "Want to step into the world of ai and ml then this is the door. We make different models and train them on real dataset to get astonishing results.",
+        activeMembers: "165"
     },
     {
         url: "https://pbs.twimg.com/profile_images/1634058036934500352/b4F1eVpJ_400x400.jpg",
         name: "GPT Society",
         tag: "Artificial Intelligence and Machine Learning",
         time: "1w",
-        type: "Club"
+        type: "Club",
+        motto: "Hey! It's time to get your hands on Chat Gpt-4. Let's join together to explore the true potential of this remarkable model.",
+        activeMembers: "165"
     },
     {
         url: "https://pbs.twimg.com/profile_images/1387934781514686468/DvGgBAHs_400x400.jpg",
         name: "Hacker Real",
         tag: "Software development",
         time: "1w",
-        type: "Community"
+        type: "Community",
+        motto: "Let me make clear, it is ethical hacking for the records but we here we post beyond that.",
+        activeMembers: "165"
     }
 ];
 
@@ -468,4 +478,81 @@ export const ccHome = [
         url: "https://images.pexels.com/photos/15362141/pexels-photo-15362141.jpeg?auto=compress&cs=tinysrgb&w=800",
         color: "#fd938f"
     }
-]
+];
+
+
+export const searchIcon = [
+    {
+        color: "#27856a",
+        name: "Clubs",
+        url: "https://images.pexels.com/photos/1454360/pexels-photo-1454360.jpeg?auto=compress&cs=tinysrgb&w=1600"
+    },
+    {
+        color: "rgb(14,115,236)",
+        name: "Community",
+        url: "https://images.pexels.com/photos/923657/pexels-photo-923657.jpeg?auto=compress&cs=tinysrgb&w=1600"
+    },
+    {
+        color: "#f59b23",
+        name: "Made for you",
+        url: "https://images.pexels.com/photos/3856027/pexels-photo-3856027.jpeg?auto=compress&cs=tinysrgb&w=1600"
+    },
+    {
+        color: "#8c1932",
+        name: "Coding",
+        url: "https://images.pexels.com/photos/4974920/pexels-photo-4974920.jpeg?auto=compress&cs=tinysrgb&w=1600"
+    },
+    {
+        color: "#503750",
+        name: "Basketball",
+        url: "https://images.pexels.com/photos/5384621/pexels-photo-5384621.jpeg?auto=compress&cs=tinysrgb&w=1600"
+    },
+    {
+        color: "#477d95",
+        name: "Universe",
+        url: "https://images.pexels.com/photos/33688/delicate-arch-night-stars-landscape.jpg?auto=compress&cs=tinysrgb&w=1600"
+    },
+    {
+        color: "#ba5d06",
+        name: "Hydrogen",
+        url: "https://images.pexels.com/photos/10670941/pexels-photo-10670941.jpeg?auto=compress&cs=tinysrgb&w=1600"
+    },
+    {
+        color: "#af2896",
+        name: "Poetry",
+        url: "https://images.pexels.com/photos/904616/pexels-photo-904616.jpeg?auto=compress&cs=tinysrgb&w=1600"
+    },
+    {
+        color: "#148a07",
+        name: "Social",
+        url: "https://images.pexels.com/photos/8042458/pexels-photo-8042458.jpeg?auto=compress&cs=tinysrgb&w=1600"
+    },
+    {
+        color: "#503750",
+        name: "Music",
+        url: "https://images.pexels.com/photos/2123606/pexels-photo-2123606.jpeg?auto=compress&cs=tinysrgb&w=1600"
+    },
+    {
+        color: "#0d73ec",
+        name: "Ai",
+        url: "https://images.pexels.com/photos/6153354/pexels-photo-6153354.jpeg?auto=compress&cs=tinysrgb&w=1600"
+    },
+    {
+        color: "#8c1932",
+        name: "Airplane",
+        url: "https://images.pexels.com/photos/4515047/pexels-photo-4515047.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+    }
+];
+
+export const contribution = {
+    joinDate: "May 2023",
+    contributions: 32,
+    rating: 882,
+    badge: "elite",
+    bestStreak: 13,
+    currentStreak: 4,
+    likes: 321,
+    profile: "https://images.pexels.com/photos/428364/pexels-photo-428364.jpeg?auto=compress&cs=tinysrgb&w=800",
+    name: "Spargens",
+    community: "Black Hole"
+}

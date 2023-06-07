@@ -3,6 +3,9 @@ import Landing from './screens/landing';
 import Following from './screens/following';
 import Community from './screens/community';
 import Club from "./screens/club";
+import Search from './screens/search';
+import SearchResult from './screens/searchResult';
+import Creation from './screens/creation';
 import { createSharedElementStackNavigator } from "react-navigation-shared-element";
 import { NavigationContainer } from "@react-navigation/native";
 // asd
@@ -17,6 +20,9 @@ export default function App() {
         <Stack.Screen name="following" component={Following} />
         <Stack.Screen name="community" component={Community} />
         <Stack.Screen name="club" component={Club} />
+        <Stack.Screen name="search" component={Search} />
+        <Stack.Screen name="searchResult" component={SearchResult} />
+        <Stack.Screen name="creation" component={Creation} />
       </Stack.Navigator>
     </NavigationContainer>
   );

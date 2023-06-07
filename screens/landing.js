@@ -2,7 +2,7 @@ import React from "react";
 import { StyleSheet, View, Text, Pressable, FlatList, Dimensions, Image, Animated, ScrollView } from "react-native";
 import { SafeAreaView } from "react-native-safe-area-context";
 import { colors, communityData, homePage } from "../constants/data";
-import { Ionicons, AntDesign } from '@expo/vector-icons';
+import { Ionicons, AntDesign, FontAwesome } from '@expo/vector-icons';
 import { ccHome } from "../constants/data";
 import SimilarCommunity from "../components/similarCommunity";
 import CommunityHomePin from "../components/communityHomePin";
@@ -53,6 +53,9 @@ export default function Landing({ navigation }) {
                 <View style={styles.topContainer}>
                     <Text style={styles.title}>Social</Text>
                     <View style={styles.icons}>
+                        <Pressable style={({ pressed }) => pressed && { opacity: 0.5 }} onPress={() => { navigation.navigate("search") }}>
+                            <FontAwesome name="search" size={20} color={colors.text} style={{ marginRight: 12 }} />
+                        </Pressable>
                         <Pressable style={({ pressed }) => pressed && { opacity: 0.5 }}>
                             <Ionicons name="notifications" size={24} color={colors.text} />
                         </Pressable>
@@ -147,7 +150,6 @@ const styles = StyleSheet.create({
         paddingHorizontal: 12
     },
     title: {
-        marginLeft: 6,
         fontWeight: "bold",
         fontSize: 38,
         marginTop: 6,
